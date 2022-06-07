@@ -5,34 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style-desafio.css">
+    <link rel="stylesheet" href="styles/style-desafio-dash.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <ul class="nav">
-            <div class="d-flex justify-content-center">
-                <li class="nav-item">
-                    <p class="nav-link active" aria-current="page" href="#">Pipoco do Trovão</p>
-                </li>   
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gerenciamento de Estoque</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rastreio de Entregas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
-            </div>
-          </ul>  
+        <ul class="nav d-flex justify-content-evenly align-items-center bg-primary">
+            <li class="nav-item">
+                <a class="nav-link text-light">Pipoco do Trovão</a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#">Gerenciamento de Estoque</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Rastreio de Entregas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Logout</a>
+            </li>
+        </ul>  
     </header>
 
     <main>
-        <div class="container">
+        <div class="container table-responsive">
             <table class="table mt-5">
                 <thead>
                 <tr>
@@ -49,29 +47,29 @@
                     <td>Pipoca</td>
                     <td>1.5</td>
                     <td>560</td>
-                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">D</button> <button type="button" class="btn btn-danger btn-sm">E</button></td>
+                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">Informações</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Manteiga</td>
                     <td>2</td>
                     <td>1236</td>
-                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">D</button> <button type="button" class="btn btn-danger btn-sm">E</button></td>
+                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">Informações</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>coca</td>
                     <td>2</td>
                     <td>123</td>
-                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">D</button> <button type="button" class="btn btn-danger btn-sm">E</button></td>
+                    <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalInfo">Informações</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>
                 </tr>
                 </tbody>
             </table>
 
-            <button type="button" class="btn btn-success mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar Produto</button>
+            <button type="button" class="btn btn-success mt-5" data-bs-toggle="modal" data-bs-target="#modalCadastro">Cadastrar Produto</button>
 
             <!-- Modal de cadastro -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
