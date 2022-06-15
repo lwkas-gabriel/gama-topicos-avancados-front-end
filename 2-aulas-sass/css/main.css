@@ -1,0 +1,14 @@
+body {
+  background-color: #7159c1;
+  color: orange;
+}
+
+.container {
+  box-shadow: 3px 3px 4px 1px rgba(255, 165, 0, 0.6);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.container p {
+  color: blue;
+}/*# sourceMappingURL=main.css.map */
